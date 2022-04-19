@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz</title>
+    <!-- FONT GG-->
+
+    <!-- ANIMATION ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- BS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- POPUP VIDEO -->
+    <link rel="stylesheet" href="./css/mklb.css">
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <!-- WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+    <!-- COUNTUP -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counterNum').countUp({
+            'time': 1000,
+            'delay': 10
+        });
+    </script>
+    <!-- POPUP VIDEO -->
+    <script src="./js/mklb.js"></script>
+    <!-- CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.testtimonial-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                600: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 1,
+
+                }
+            }
+        })
+
+    </script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e15516c5b2.js" crossorigin="anonymous"></script>
+    <!--BS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper-blog", {
+            slidesPerView: 1,
+            // Responsive breakpoints
+            loop: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 480px
+
+                // when window width is >= 640px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- ANIMATION ON SCROOL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
