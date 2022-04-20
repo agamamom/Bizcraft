@@ -1,0 +1,82 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background: transparent;
+    transition: all .3s;
+    &.active{
+        background: #fff;
+        box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
+        padding: 15px 0;
+        .navbar{
+            .btn.button-outline-primary{
+                color: #007ac7;
+                &:hover{
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+    .navbar {
+        .navbar-collapse{
+            justify-content: end;
+        }
+        .nav-link {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px 15px 18px;
+            transition: 0.2s ease;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+        .navbar-nav {
+            gap: 30px;
+            line-height: 48px;
+            .nav-item {
+                position: relative;
+                .dropMenu {
+                    position: absolute;
+                    left: -55%;
+                    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.14);
+                    padding: 15px;
+                    top: 50px;
+                    width: 182px;
+                    height: 151px;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.3s all;
+                    transform: scale(0.8);
+                    a {
+                        font-size: 1.6rem;
+                        line-height: 40px;
+                        &:hover {
+                            background-color: transparent;
+                            color: $main-color;
+                        }
+                    }
+                }
+                
+                &:hover .dropMenu {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+                .nav-link:hover {
+                    color: $main-color;
+                }
+            }
+            .btn{
+                margin-left: 82px;
+            }
+        }
+    }
+}
