@@ -29,7 +29,7 @@
 
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-dark">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="./img/logo.png" alt="logo" srcset="">
@@ -50,6 +50,7 @@
                                     <li><a class="dropdown-item" href="#">Homepage 1</a></li>
                                     <li><a class="dropdown-item" href="#">Homepage 2</a></li>
                                     <li><a class="dropdown-item" href="#">Homepage 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Homepage 4</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -102,6 +103,27 @@
 
         </div>
     </header>
+    <section class="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper swiper-overlay">
+                <div class="swiper-slide" style="background: url(./img/slider/bg1.jpg);">
+                    <div class="container">
+                        <h2>Need To Invent The Future!</h2>
+                        <h3>
+                            We Making Difference To Great Things Possible
+                        </h3>
+                        <div class="banner-button">
+                            <a href="#">Start Now</a>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+        </div>
+    </section>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -151,37 +173,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".swiper-blog", {
-            slidesPerView: 1,
-            // Responsive breakpoints
-            loop: true,
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 30
-                },
-                // when window width is >= 480px
-
-                // when window width is >= 640px
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1000: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                }
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+        var swiper = new Swiper(".mySwiper", {});
     </script>
     <!-- ANIMATION ON SCROOL -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

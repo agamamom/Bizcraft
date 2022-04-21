@@ -97,14 +97,10 @@ ul {
 
 .header .navbar .navbar-nav .nav-item .dropMenu {
   position: absolute;
-  left: -55%;
-  -webkit-box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.14);
-          box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.14);
-  padding: 15px;
-  top: 50px;
-  width: 182px;
-  height: 151px;
-  padding: 10px;
+  left: -20%;
+  padding: 0 15px;
+  top: 76px;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,12 +108,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -128,8 +118,13 @@ ul {
 }
 
 .header .navbar .navbar-nav .nav-item .dropMenu a {
-  font-size: 1.6rem;
-  line-height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 .header .navbar .navbar-nav .nav-item .dropMenu a:hover {
@@ -150,5 +145,18 @@ ul {
 
 .header .navbar .navbar-nav .btn {
   margin-left: 82px;
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+}
+
+.banner .swiper-overlay {
+  position: relative;
+  z-index: 1;
+  background: url(../../img/overaly.png);
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
