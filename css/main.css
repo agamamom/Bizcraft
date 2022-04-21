@@ -53,6 +53,7 @@ ul {
   background: transparent;
   -webkit-transition: all .3s;
   transition: all .3s;
+  border-top: 5px solid #81c83c;
 }
 
 .header.active {
@@ -79,7 +80,7 @@ ul {
 .header .navbar .nav-link {
   text-transform: uppercase;
   font-weight: bold;
-  padding: 20px 15px 18px;
+  padding: 20px 10px 18px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   font-size: 1.4rem;
@@ -87,8 +88,7 @@ ul {
 }
 
 .header .navbar .navbar-nav {
-  gap: 30px;
-  line-height: 48px;
+  gap: 14px;
 }
 
 .header .navbar .navbar-nav .nav-item {
@@ -99,7 +99,7 @@ ul {
   position: absolute;
   left: -20%;
   padding: 0 15px;
-  top: 76px;
+  top: 62px;
   width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +132,10 @@ ul {
   color: #81c83c;
 }
 
+.header .navbar .navbar-nav .nav-item i {
+  margin-left: 6px;
+}
+
 .header .navbar .navbar-nav .nav-item:hover .dropMenu {
   opacity: 1;
   visibility: visible;
@@ -152,11 +156,76 @@ ul {
   position: relative;
 }
 
-.banner .swiper-overlay {
-  position: relative;
-  z-index: 1;
-  background: url(../../img/overaly.png);
-  width: 100%;
+.banner .swiper {
   height: 100%;
+}
+
+.banner .swiper .swiper-slide::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/overaly.png);
+}
+
+.banner .swiper .swiper-slide .swiper__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.banner .swiper .swiper-slide .swiper__content h2 {
+  color: #fff;
+  font-size: 3.2em;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.banner .swiper .swiper-slide .swiper__content h3 {
+  font-size: 2.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+}
+
+.btn__outline {
+  border-radius: 50px;
+  padding: 12px 30px;
+  background: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #323232;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.btn__outline--green {
+  color: #81c83c;
+  border: 2px solid #81c83c;
+}
+
+.btn__outline--green:hover {
+  color: #fff;
+  background: #81c83c;
+}
+
+.btn__outline--white {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn__outline--white:hover {
+  color: #15192b;
+  background: #fff;
 }
 /*# sourceMappingURL=main.css.map */

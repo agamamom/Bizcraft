@@ -6,6 +6,7 @@
     z-index: 15;
     background: transparent;
     transition: all .3s;
+    border-top: 5px solid $main-color;
     &.active{
         background: #fff;
         box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
@@ -27,21 +28,20 @@
         .nav-link {
             text-transform: uppercase;
             font-weight: bold;
-            padding: 20px 15px 18px;
+            padding: 20px 10px 18px;
             transition: 0.2s ease;
             font-size: 1.4rem;
             color: #fff;
         }
         .navbar-nav {
-            gap: 30px;
-            line-height: 48px;
+            gap: 14px;
             .nav-item {
                 position: relative;
                 .dropMenu {
                     position: absolute;
                     left: -20%;
                     padding: 0 15px;
-                    top: 76px;
+                    top: 62px;
                     width: 180px;
                     display: flex;
                     flex-direction: column;
@@ -61,9 +61,12 @@
                             background-color: transparent;
                             color:$main-color;            
                         }
+                        
                     }
                 }
-                
+                i{
+                    margin-left: 6px;
+                }
                 &:hover .dropMenu {
                     opacity: 1;
                     visibility: visible;
