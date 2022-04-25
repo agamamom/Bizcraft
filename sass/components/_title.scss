@@ -1,0 +1,32 @@
+.title{
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 3.5rem;
+        padding-right: 15px;
+        color: #6A6A6A;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    .heading{
+        padding-left: 15px;
+        border-left: 2px solid #e7e7e7;
+        h2{
+            position: relative;
+            margin: 0;
+            line-height: 32px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
+            font-size: 32px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            text-transform: capitalize;
+            display: block;
+            color: #6A6A6A;
+        }
+    }
+}

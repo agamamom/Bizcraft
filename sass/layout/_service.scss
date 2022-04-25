@@ -1,0 +1,25 @@
+.service{
+    .service__content{
+        text-align: center;
+        margin-top: 70px;
+        padding: 0 28px;
+        i{
+            font-size: 36px;
+            line-height: 46px;
+            color: $p-color;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 16px;
+            color: $h-color;
+            margin-bottom: 16px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.6em;
+            color: $p-color;
+            text-transform: initial;
+        }
+    }
+}
