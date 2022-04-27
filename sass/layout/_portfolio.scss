@@ -1,0 +1,28 @@
+.portfolio{
+    .portfolio__tags{
+       .tags-item{
+           display: flex;
+           li{
+                margin-right: 10px;
+               a{
+                    text-decoration: none;
+                    padding: 5px 15px 8px;
+                    border: 1px solid #ddd;
+                    transition: all 0.3s;
+                    color: #000;
+                    cursor: pointer;
+                }
+           }
+       } 
+    }
+    .portfolio__items--wrap{
+        .portfolio__items{
+            .col-3{
+                padding: 0;
+                img{
+                    height: 347px;
+                }
+            }    
+        }
+    }
+}
