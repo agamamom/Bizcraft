@@ -340,6 +340,10 @@ ul {
   text-transform: initial;
 }
 
+.portfolio {
+  background-color: #f5f5f5;
+}
+
 .portfolio .portfolio__tags .tags-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +362,10 @@ ul {
   transition: all 0.3s;
   color: #000;
   cursor: pointer;
+}
+
+.portfolio .padding-bottom {
+  padding-bottom: 80px;
 }
 
 .portfolio .portfolio__items--wrap .portfolio__items .col-3 {

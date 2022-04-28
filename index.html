@@ -233,8 +233,8 @@
             </div>
         </div>
     </section>
-    <section class="portfolio section">
-        <div class="container d-flex justify-content-between">
+    <section class="portfolio section pb-0">
+        <div class="container d-flex justify-content-between padding-bottom">
             <div class="title">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <div class="heading">
@@ -244,19 +244,19 @@
             <div class="portfolio__tags">
                 <ul class="tags-item">
                     <li>
-                        <a class="tags__all" data-filter=".item-all">All</a>
+                        <a class="tags__button" data-name="*">All</a>
                     </li>
                     <li>
-                        <a class="tags__design" data-filter=".item-web">Web Design</a>
+                        <a class="tags__button" data-name=".item-web">Web Design</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__development">Development</a>
+                        <a class="tags__button" data-name=".item-dev">Development</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__joomla">Joomla</a>
+                        <a class="tags__button" data-name=".item-joomla">Joomla</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__wordpress">Wordpress</a>
+                        <a class="tags__button" data-name=".item-wordpress">Wordpress</a>
                     </li>
                 </ul>
             </div>
@@ -264,30 +264,80 @@
         </div>
         <div class="container-fluid portfolio__items--wrap">
             <div class="portfolio__items">
-                <div class="row">
-                    <div class="col-3 item-all item-web">
+                <div class="row grid">
+                    <div class="col-3 item-web grid-item">
                         <img src="./img/portfolio/portfolio1.jpg" alt="p1">
                     </div>
-                    <div class="col-3 item-all item-dev">
+                    <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio2.jpg" alt="p2">
                     </div>
-                    <div class="col-3 item-all item-joomla">
+                    <div class="col-3 item-joomla grid-item">
                         <img src="./img/portfolio/portfolio3.jpg" alt="p3">
                     </div>
-                    <div class="col-3 item-all item-wordpress">
+                    <div class="col-3 item-wordpress grid-item">
                         <img src="./img/portfolio/portfolio4.jpg" alt="p4">
                     </div>
-                    <div class="col-3 item-all item-joomla">
+                    <div class="col-3 item-joomla grid-item">
                         <img src="./img/portfolio/portfolio5.jpg" alt="p5">
                     </div>
-                    <div class="col-3 item-all item-dev">
+                    <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio6.jpg" alt="p6">
                     </div>
-                    <div class="col-3 item-all item-dev">
+                    <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio7.jpg" alt="p7">
                     </div>
-                    <div class="col-3 item-all item-dev">
+                    <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio8.jpg" alt="p8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="counter section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="counter__item">
+                        <i class="fa-solid fa-user"></i>
+                        <h2>
+                            1200
+                        </h2>
+                        <p>
+                            CLIENTS
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter__item">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h2>
+                            1277
+                        </h2>
+                        <p>
+                            ITEM SOLD
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter__item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h2>
+                            869
+                        </h2>
+                        <p>
+                            PROJECTS
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="counter__item">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h2>
+                            76
+                        </h2>
+                        <p>
+                            AWARDS
+                        </p>
                     </div>
                 </div>
             </div>
@@ -357,6 +407,20 @@
     </script>
     <!-- ISOTOPE -->
     <script src="./sass/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script>
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+        });
+        $('.tags__button').on("click", function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value
+            });
+            $('.filter button').removeClass('active');
+            $(this).addClass('active');
+        })
+    </script>
     <!-- SLICK-SLIDER -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
