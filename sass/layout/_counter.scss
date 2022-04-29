@@ -1,0 +1,40 @@
+.counterUp{
+    background: #2a2d32;
+    .counter__column--one{
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .counter__column--two{
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .counter__column--three{
+        background: rgba(0, 0, 0, 0.15);
+    }
+    .counter__column--four{
+        background: rgba(0, 0, 0, 0.09);
+    }
+    .counter__column{
+        &:hover{
+            background-color: #000;
+        }
+    }
+    .counter__item{
+        text-align: center;
+        padding: 46px 40px 30px;
+        i{
+            font-size: 36px;
+            color: #fff;
+        }
+        h2{
+            font-size: 4.2rem;
+            font-weight: 700;
+            margin-top: 10px;
+            color: #fff;
+        }
+        p{
+            font-size: 1.8rem;
+            margin-top: 8px;
+            color: #fff;
+        }
+        
+    }
+}

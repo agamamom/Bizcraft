@@ -350,6 +350,11 @@ ul {
   display: flex;
 }
 
+.portfolio .portfolio__tags .tags-item .active {
+  color: #fff;
+  background-color: #000;
+}
+
 .portfolio .portfolio__tags .tags-item li {
   margin-right: 10px;
 }
@@ -374,6 +379,53 @@ ul {
 
 .portfolio .portfolio__items--wrap .portfolio__items .col-3 img {
   height: 347px;
+}
+
+.counterUp {
+  background: #2a2d32;
+}
+
+.counterUp .counter__column--one {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.counterUp .counter__column--two {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.counterUp .counter__column--three {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.counterUp .counter__column--four {
+  background: rgba(0, 0, 0, 0.09);
+}
+
+.counterUp .counter__column:hover {
+  background-color: #000;
+}
+
+.counterUp .counter__item {
+  text-align: center;
+  padding: 46px 40px 30px;
+}
+
+.counterUp .counter__item i {
+  font-size: 36px;
+  color: #fff;
+}
+
+.counterUp .counter__item h2 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.counterUp .counter__item p {
+  font-size: 1.8rem;
+  margin-top: 8px;
+  color: #fff;
 }
 
 .btn__outline {
