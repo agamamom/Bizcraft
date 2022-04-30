@@ -373,12 +373,68 @@ ul {
   padding-bottom: 80px;
 }
 
-.portfolio .portfolio__items--wrap .portfolio__items .col-3 {
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item {
   padding: 0;
 }
 
-.portfolio .portfolio__items--wrap .portfolio__items .col-3 img {
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item img {
   height: 347px;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap h4 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.312);
+  z-index: -1;
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap .portfolio__hover--button i {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .counterUp {

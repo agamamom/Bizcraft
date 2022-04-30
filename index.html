@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./sass/vendor/bootstrap/bootstrap.min.css">
     <!-- POPUP VIDEO -->
     <link rel="stylesheet" href="./css/mklb.css">
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="./sass/vendor/lightBox/lightbox.min.css">
     <!-- CAROUSEL -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
@@ -267,27 +269,90 @@
                 <div class="row grid">
                     <div class="col-3 item-web grid-item">
                         <img src="./img/portfolio/portfolio1.jpg" alt="p1">
+                        <div class="portfolio__hover position-absolute">
+                            <div class="portfolio__hover--wrap">
+                                <h4>
+                                    STARTUP BUSINESS
+                                </h4>
+                                <div class="portfolio__hover--button">
+                                    <a href="#" class="me-5"><i class="fa-solid fa-link"></i></a>
+                                    <a href="./img/portfolio/portfolio1.jpg" data-lightbox="image-1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio2.jpg" alt="p2">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                EASY TO LANUNCH
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-joomla grid-item">
                         <img src="./img/portfolio/portfolio3.jpg" alt="p3">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                YOUR BUSINESS
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-wordpress grid-item">
                         <img src="./img/portfolio/portfolio4.jpg" alt="p4">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                PREGO MATCH
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-joomla grid-item">
                         <img src="./img/portfolio/portfolio5.jpg" alt="p5">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                FASHION BRAND
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio6.jpg" alt="p6">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                THE INSIDAGE
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio7.jpg" alt="p7">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                LIGHT CARPET
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                     <div class="col-3 item-dev grid-item">
                         <img src="./img/portfolio/portfolio8.jpg" alt="p8">
+                        <div class="portfolio__hover position-absolute">
+                            <h4>
+                                AMAZING KEYBOARD
+                            </h4>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -506,6 +571,14 @@
             });
             $('.tags__button').removeClass('active');
             $(this).addClass('active');
+        })
+    </script>
+    <!-- LIGHTBOX -->
+    <script src="./sass/vendor/lightBox/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
         })
     </script>
     <!-- COUNTER -->
