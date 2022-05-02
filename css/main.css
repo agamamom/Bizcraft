@@ -396,6 +396,21 @@ ul {
   opacity: 1;
 }
 
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover:hover .portfolio__hover--wrap::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover:hover .portfolio__hover--wrap h4 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover:hover .portfolio__hover--wrap .portfolio__hover--button i {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,6 +432,10 @@ ul {
   font-size: 18px;
   color: #fff;
   margin-bottom: 30px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap::after {
@@ -427,7 +446,11 @@ ul {
   left: 30px;
   right: 30px;
   border: 1px solid rgba(255, 255, 255, 0.312);
-  z-index: -1;
+  z-index: 1;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .portfolio .portfolio__items--wrap .portfolio__items .grid-item .portfolio__hover .portfolio__hover--wrap .portfolio__hover--button i {
@@ -435,6 +458,10 @@ ul {
   line-height: 30px;
   color: #fff;
   cursor: pointer;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .counterUp {
@@ -482,6 +509,35 @@ ul {
   font-size: 1.8rem;
   margin-top: 8px;
   color: #fff;
+}
+
+.feature .feature__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 34px;
+  padding: 0 50px 0 0;
+}
+
+.feature .feature__item .feature__icon {
+  color: #81c83c;
+  font-size: 2.6rem;
+  margin-right: 28px;
+}
+
+.feature .feature__item .feature__content {
+  padding-top: 8px;
+}
+
+.feature .feature__item .feature__content h4 {
+  font-size: 1.8rem;
+  color: #323232;
+}
+
+.feature .feature__item .feature__content p {
+  color: #6A6A6A;
+  font-size: 1.5rem;
+  text-transform: initial;
 }
 
 .btn__outline {

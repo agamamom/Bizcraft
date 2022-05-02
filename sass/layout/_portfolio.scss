@@ -42,6 +42,15 @@
                     &:hover{
                         opacity: 1;
                     }
+                    &:hover .portfolio__hover--wrap::after{
+                        transform: scale(1);
+                    }
+                    &:hover .portfolio__hover--wrap h4{
+                        transform: translateY(0);
+                    }
+                    &:hover .portfolio__hover--wrap .portfolio__hover--button i{
+                        transform: scale(1);
+                    }
                     .portfolio__hover--wrap{
                         display: flex;
                         align-items: center;
@@ -52,6 +61,8 @@
                             font-size: 18px;
                             color: #fff;
                             margin-bottom: 30px;
+                            transform: translateY(20px);
+                            transition: all .3s;
                         }
                         &::after{
                             content: '';
@@ -61,7 +72,9 @@
                             left: 30px;
                             right: 30px;
                             border: 1px solid rgba(255, 255, 255, 0.312);
-                            z-index: -1;
+                            z-index: 1;
+                            transform: scale(0.6);
+                            transition: all .3s;
                         }
                         .portfolio__hover--button{
                             i{
@@ -69,6 +82,8 @@
                                 line-height: 30px;
                                 color: #fff;
                                 cursor: pointer;
+                                transform: scale(0.5);
+                                transition: all .3s;
                             }
                         }
                         
