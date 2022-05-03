@@ -1,0 +1,55 @@
+.image-block{
+    background: #f4f4f4;
+    .image-block-right{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h4{
+            font-size: 1.8rem;
+            line-height: normal;
+            margin: 5px 0 0 0;
+            text-transform: uppercase;
+            color: $h-color;
+        }
+        h2{
+            color: $h-color;
+            font-size: 4rem;
+            line-height: 100%;
+        
+        }
+        p{
+            text-transform: initial;
+            padding: 0 186px;
+            color: $p-color;
+        }
+        
+        .block-right-item{
+             display: flex;
+             margin-top: 30px;
+             align-items: center;
+            span{
+                padding: 16px;
+                border-radius: 50%;
+                border: 1px solid $main-color;
+                background-color: $main-color;
+                margin-right: 20px;
+                i{
+                    color: white;
+                    font-size: 28px;
+                }
+            }
+            .block-right-item-content{
+                text-align: left;
+                p{
+                    padding: 0;
+                }
+            }
+            
+        }
+
+        
+    }
+}
