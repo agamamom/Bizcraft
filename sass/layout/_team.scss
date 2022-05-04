@@ -1,0 +1,86 @@
+.team{
+    .title{
+        margin-bottom: 60px;
+    }
+    .team__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            margin-bottom: 0;
+            font-size: 20px;
+            color: $h-color;
+            letter-spacing: 0.5px;
+            margin-top: 10px;
+        }
+        p{
+            color: #959595;
+            font-size: 15px;
+            line-height: 1.6em;
+        }
+        .team__avatar{
+            position: relative;
+            .img-bottom{
+                position: absolute;
+                display: block;
+                float: left;
+                border-left: 130px solid #fff;
+                border-right: 130px solid #fff;
+                bottom: 0px;
+                border-bottom: 0px solid transparent;
+                border-top: 73px solid transparent;
+            }
+            .img-top{
+                position: absolute;
+                display: block;
+                float: left;
+                border-left: 130px solid #fff;
+                border-right: 130px solid #fff;
+                top: 0;
+                border-top: 0px solid transparent;
+                border-bottom: 73px solid transparent;
+            }
+        }
+        .team__iconMedia{
+            a{
+                text-decoration: none;
+            }
+            .iconFace{
+                &:hover i{
+                    background-color: #325c94;
+                }
+            }
+            .iconTwitter{
+                &:hover i{
+                    background-color: #00abdc;
+                } 
+            }
+            .iconGoogle{
+                &:hover i{
+                    background-color: #dd4b39;
+                } 
+            }
+            .iconLinkdin{
+                &:hover i{
+                    background-color: #007bb6;
+                }  
+            }
+            .iconBasketball{
+                &:hover i{
+                    background-color: #ea4c89;
+                }  
+            }
+            i{
+                height: 30px;
+                width: 30px;
+                border: 1px solid #d5d5d5;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background: #d5d5d5;
+                color: #fff;
+                transition: all .4s;              
+            }
+        }
+    }
+}
