@@ -753,11 +753,52 @@ ul {
   margin-bottom: 40px;
 }
 
-.pricing .pricing__basic {
-  text-align: center;
+.pricing .row .pricing__column {
+  padding: 36px;
 }
 
-.pricing .pricing__basic h3 {
+.pricing .pricing__basic,
+.pricing .pricing__Standared,
+.pricing .pricing__professional,
+.pricing .pricing__premium {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.141);
+  position: relative;
+}
+
+.pricing .pricing__basic:hover .pricing__money,
+.pricing .pricing__Standared:hover .pricing__money,
+.pricing .pricing__professional:hover .pricing__money,
+.pricing .pricing__premium:hover .pricing__money {
+  background: #81c83c;
+}
+
+.pricing .pricing__basic:hover .pricing__money,
+.pricing .pricing__Standared:hover .pricing__money,
+.pricing .pricing__professional:hover .pricing__money,
+.pricing .pricing__premium:hover .pricing__money {
+  color: #fff;
+}
+
+.pricing .pricing__basic:hover .pricing__button .btn__outline,
+.pricing .pricing__Standared:hover .pricing__button .btn__outline,
+.pricing .pricing__professional:hover .pricing__button .btn__outline,
+.pricing .pricing__premium:hover .pricing__button .btn__outline {
+  background: #81c83c;
+  color: #fff;
+}
+
+.pricing .pricing__basic:hover .pricing__money::after,
+.pricing .pricing__Standared:hover .pricing__money::after,
+.pricing .pricing__professional:hover .pricing__money::after,
+.pricing .pricing__premium:hover .pricing__money::after {
+  border-top-color: #81c83c;
+}
+
+.pricing .pricing__basic h3,
+.pricing .pricing__Standared h3,
+.pricing .pricing__professional h3,
+.pricing .pricing__premium h3 {
   font-size: 2.4rem;
   line-height: 30px;
   font-weight: 700;
@@ -766,7 +807,10 @@ ul {
   color: #959595;
 }
 
-.pricing .pricing__basic p {
+.pricing .pricing__basic p,
+.pricing .pricing__Standared p,
+.pricing .pricing__professional p,
+.pricing .pricing__premium p {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: normal;
@@ -774,25 +818,107 @@ ul {
   color: #959595;
 }
 
-.pricing .pricing__basic .pricing__money {
+.pricing .pricing__basic .pricing__money,
+.pricing .pricing__Standared .pricing__money,
+.pricing .pricing__professional .pricing__money,
+.pricing .pricing__premium .pricing__money {
   font-size: 4.8rem;
   color: #6A6A6A;
+  padding: 30px 0;
+  background: #f2f2f2;
+  margin-bottom: 34px;
+  position: relative;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }
 
-.pricing .pricing__basic .pricing__money sup {
+.pricing .pricing__basic .pricing__money::after,
+.pricing .pricing__Standared .pricing__money::after,
+.pricing .pricing__professional .pricing__money::after,
+.pricing .pricing__premium .pricing__money::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 100%;
+  border: solid transparent;
+  border-width: 15px;
+  border-top-color: #f2f2f2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.pricing .pricing__basic .pricing__money sup,
+.pricing .pricing__Standared .pricing__money sup,
+.pricing .pricing__professional .pricing__money sup,
+.pricing .pricing__premium .pricing__money sup {
   top: -0.9em;
   font-size: 50%;
-  left: -0.01em;
+  left: 0.41em;
   font-weight: 700;
 }
 
-.pricing .pricing__basic .pricing__money strong {
+.pricing .pricing__basic .pricing__money strong,
+.pricing .pricing__Standared .pricing__money strong,
+.pricing .pricing__professional .pricing__money strong,
+.pricing .pricing__premium .pricing__money strong {
   font-weight: bolder;
 }
 
-.pricing .pricing__basic .pricing__money sub {
+.pricing .pricing__basic .pricing__money sub,
+.pricing .pricing__Standared .pricing__money sub,
+.pricing .pricing__professional .pricing__money sub,
+.pricing .pricing__premium .pricing__money sub {
   font-size: 1.8rem;
   font-weight: 700;
+  left: -0.5em;
+}
+
+.pricing .pricing__basic .pricing__content p,
+.pricing .pricing__Standared .pricing__content p,
+.pricing .pricing__professional .pricing__content p,
+.pricing .pricing__premium .pricing__content p {
+  padding: 12px 29px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #6A6A6A;
+  border-top: 1px dashed #dedede;
+  margin-bottom: 0;
+}
+
+.pricing .pricing__basic .pricing__content p:first-child,
+.pricing .pricing__Standared .pricing__content p:first-child,
+.pricing .pricing__professional .pricing__content p:first-child,
+.pricing .pricing__premium .pricing__content p:first-child {
+  border-top: 0px;
+}
+
+.pricing .pricing__basic .pricing__content p:last-child,
+.pricing .pricing__Standared .pricing__content p:last-child,
+.pricing .pricing__professional .pricing__content p:last-child,
+.pricing .pricing__premium .pricing__content p:last-child {
+  margin-bottom: 34px;
+}
+
+.pricing .pricing__basic .pricing__button,
+.pricing .pricing__Standared .pricing__button,
+.pricing .pricing__professional .pricing__button,
+.pricing .pricing__premium .pricing__button {
+  position: absolute;
+  top: 98%;
+  -webkit-transform: translateX(44%);
+          transform: translateX(44%);
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.pricing .pricing__basic .pricing__button .btn__outline,
+.pricing .pricing__Standared .pricing__button .btn__outline,
+.pricing .pricing__professional .pricing__button .btn__outline,
+.pricing .pricing__premium .pricing__button .btn__outline {
+  background-color: #fff;
 }
 
 .btn__outline {
