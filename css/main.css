@@ -921,6 +921,11 @@ ul {
   background-color: #fff;
 }
 
+.testimonial {
+  background: url("../../img/parallax/parallax2.jpg");
+  text-align: center;
+}
+
 .btn__outline {
   border-radius: 50px;
   padding: 12px 30px;

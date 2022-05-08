@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- SWIPER -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- ANIMATION -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- SLICK-SLIDER -->
@@ -108,7 +108,7 @@
         </div>
     </header>
     <section class="banner">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper1">
             <div class="swiper-slide" data-dot="<i class=&quot;fa fa-bicycle&quot;></i> Invent"
                 style="background: url(./img/slider/bg1.jpg);">
                 <div class="container swiper__content">
@@ -875,6 +875,61 @@
             </div>
         </div>
     </section>
+    <section class="testimonial section">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/team/testimonial2.jpg" alt="t2">
+                        <p><span><i class="fas fa-quote-left"></i></span>
+                            Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many
+                            web
+                            sites still
+                            in their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes
+                            on
+                            purpose. Lorem Ipsum is that it as opposed to using.
+                            <span><i class="fas fa-quote-right"></i></span>
+                        </p>
+                        <h4 class="name">Sarah Arevik</h4>
+                        <h5>Chief Executive</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/team/testimonial1.jpg" alt="t1">
+                        <p><span><i class="fas fa-quote-left"></i></span>
+                            Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many
+                            web
+                            sites still
+                            in their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes
+                            on
+                            purpose. Lorem Ipsum is that it as opposed to using.
+                            <span><i class="fas fa-quote-right"></i></span>
+                        </p>
+                        <h4 class="name">Sarah Arevik</h4>
+                        <h5>Chief Executive</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/team/testimonial3.jpg" alt="t3">
+                        <p><span><i class="fas fa-quote-left"></i></span>
+                            Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many
+                            web
+                            sites still
+                            in their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes
+                            on
+                            purpose. Lorem Ipsum is that it as opposed to using.
+                            <span><i class="fas fa-quote-right"></i></span>
+                        </p>
+                        <h4 class="name">Sarah Arevik</h4>
+                        <h5>Chief Executive</h5>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -892,37 +947,30 @@
     </script>
     <!-- POPUP VIDEO -->
     <script src="./js/mklb.js"></script>
-    <!-- CAROUSEL -->
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
-        $('.testtimonial-carousel').owlCarousel({
-            loop: true,
-            responsiveClass: true,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1,
-
-                },
-                600: {
-                    items: 1,
-
-                },
-                1000: {
-                    items: 1,
-
-                }
-            }
-        })
-
-    </script>
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/e15516c5b2.js" crossorigin="anonymous"></script>
     <!--BS -->
     <script src="./sass/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- SLICK-SLIDER -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.swiper-wrapper1').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                customPaging: function (slider, i) {
+                    return $(slider.$slides[i]).data('dot');
+                },
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
     <!-- SWIPER -->
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
@@ -931,7 +979,7 @@
                 clickable: true,
             },
         });
-    </script> -->
+    </script>
     <!-- ANIMATION ON SCROOL -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -970,24 +1018,7 @@
             time: 1000
         });
     </script>
-    <!-- SLICK-SLIDER -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.swiper-wrapper').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: true,
-                customPaging: function (slider, i) {
-                    return $(slider.$slides[i]).data('dot');
-                },
-                infinite: true,
-                autoplay: false,
-                autoplaySpeed: 3000
-            });
-        });
-    </script>
+
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>
