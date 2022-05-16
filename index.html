@@ -929,6 +929,130 @@
             </div>
         </div>
     </section>
+    <section class="clients section">
+        <div class="container">
+            <div class="clients__content">
+                <div class="swiper clientSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client1.png" alt="c1">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client2.png" alt="c2">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client3.png" alt="c3">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client4.png" alt="c4">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client5.png" alt="c5">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client6.png" alt="c6">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/clients/client7.png" alt="c7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="mainFooter">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="firtCol">
+                            <div class="Col__title">
+                                <h4>
+                                    RECENT POSTS
+                                </h4>
+                            </div>
+                            <div class="firstCol__content">
+                                <a href="#">BULGARIA CLAIMS TO FIND EUROPE'S 'OLDEST TOWN'</a>
+                                <p>
+                                    Posted by John Doe
+                                    <span> in Blog</span>
+                                </p>
+                            </div>
+                            <div class="firstCol__content">
+                                <a href="#">FEW ANSWERS IN CASE OF MURDERED LAW PROFESSOR</a>
+                                <p>
+                                    Mar 15, 2015
+                                    <span> 03</span>
+                                </p>
+                            </div>
+                            <div class="firstCol__content">
+                                <a href="#">OVER THE YEAR WE HAVE LOTS OF EXPERIENCE IN OUR FIELD</a>
+                                <p>
+                                    Apr 17, 2015
+                                    <span> 14</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="secondCol">
+                            <div class="Col__title">
+                                <h4>
+                                    FLICKR PHOTOS
+                                </h4>
+                            </div>
+                            <div class="secondCol__content">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/gallery/1.jpg" alt="p1">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/gallery/2.jpg" alt="p2">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/gallery/3.jpg" alt="p3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/gallery/4.jpg" alt="p4">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/gallery/5.jpg" alt="p5">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="" alt="p1">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="" alt="p1">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="" alt="p1">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="" alt="p1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -976,6 +1100,16 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper2 = new Swiper(".clientSwiper", {
+            slidesPerView: 5,
+            spaceBetween: 4,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
         });
     </script>
